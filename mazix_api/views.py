@@ -21,6 +21,8 @@ class CategoryView(APIView):
             serializer = CategorySerializer(categories, many=True)
             return Response(serializer.data)
 
+
+
 class WallpaperView(APIView):
     parser_classes = (MultiPartParser, FormParser)
 
@@ -36,3 +38,5 @@ class WallpaperView(APIView):
             wallpapers = Wallpaper.objects.all()
             serializer = WallpaperSerializer(wallpapers, many=True)
             return Response(serializer.data)
+
+
