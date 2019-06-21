@@ -128,7 +128,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 
 STATICFILES_DIRS = [
-    'http://mazix.herokuapp.com/media/',
+    '/media/',
 
 ]
 
