@@ -8,4 +8,4 @@ class CategorySerializer(serializers.ModelSerializer):
 class WallpaperSerializer(serializers.ModelSerializer):
   class Meta():
     model = Wallpaper
-    fields = ('id', 'name','category','file', 'timestamp')
+    fields = ('id', 'name','category','file', 'timestamp','downloads')

@@ -12,5 +12,6 @@ class Wallpaper(models.Model):
   category = models.ForeignKey(to=Category,on_delete=models.CASCADE, related_name="category", null=True, blank=True)
   file = models.FileField(blank=False, null=False)
   timestamp = models.DateTimeField(auto_now_add=True)
+  downloads= models.IntegerField(default=0)
   def __str__(self):
     return self.name
